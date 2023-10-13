@@ -5,10 +5,7 @@ const sdk = new ResilientSDK();
 // Add a message listener
 sdk.addMessageListener((event) => {
     const message = event.data.data;
-    var alertDiv = document.getElementById("result");
-    alertDiv.className = `alert alert-success`;  // Set the alert type
-    alertDiv.innerHTML = JSON.stringify(message);  // Set the message
-    alertDiv.style.display = 'block';            // Show the alert
+    alert(JSON.stringify(message));  // Set the message
 });
 
 var commit = document.querySelector('[data-nexres="commit-page-script"]');
