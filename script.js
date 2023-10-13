@@ -6,7 +6,7 @@ const sdk = new ResilientSDK();
 sdk.addMessageListener((event) => {
     const message = event.data.data;
     var alertDiv = document.getElementById("result");
-    alertDiv.className = `alert alert-${type}`;  // Set the alert type
+    alertDiv.className = `alert alert-success`;  // Set the alert type
     alertDiv.innerHTML = JSON.stringify(message);  // Set the message
     alertDiv.style.display = 'block';            // Show the alert
 });
