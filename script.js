@@ -19,7 +19,7 @@
 
 
 
-import ResilientSDK from 'https://cdn.resilientdb.com/resilient-sdk.js';
+import ResilientSDK from 'https://cdn.jsdelivr.net/gh/apache/incubator-resilientdb-cdn@main/resilient-sdk.js';
 
 const sdk = new ResilientSDK();
 
